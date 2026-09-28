@@ -1,0 +1,13 @@
+# KiCad local state and backups (not shared)
+*.kicad_prl
+*.lck
+*.bak
+*-bak
+.history/
+*-backups/
+_autosave-*
+\#auto_saved_files\#
+fp-info-cache
+
+# Archives
+*.zip

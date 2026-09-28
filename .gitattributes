@@ -1,0 +1,4 @@
+# Keep KiCad files LF on every OS so diffs stay clean
+* text=auto eol=lf
+*.pdf binary
+*.png binary
