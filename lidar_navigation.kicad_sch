@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "ca9d0530-a0a5-4f7a-b6f2-e5d240c42f14")
 	(paper "A4")
+	(title_block
+		(title "Lidar + Navigation Subsystem")
+		(date "2026-09-27")
+		(rev "Rev A")
+		(company "Original architecture per Canva flowchart; 5V from Jetson header")
+	)
 	(lib_symbols
 		(symbol "Device:Antenna"
 			(pin_numbers
