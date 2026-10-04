@@ -1171,7 +1171,7 @@
 		)
 		(uuid "41e6df00-de10-4020-b528-8ecb20d8a1d9")
 	)
-	(text "NOTE: lidar start-up 1.5 A > Jetson 1 A/pin, check\nneed to add footprints for J1, J2"
+	(text "NOTE: lidar start-up 1.5 A > Jetson 1 A/pin, check"
 		(exclude_from_sim no)
 		(at 65.786 82.042 0)
 		(effects
@@ -1515,7 +1515,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 94.742 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -1753,7 +1753,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 101.092 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -2228,7 +2228,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 127 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -2473,7 +2473,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:Nordic_AQFN-94-1EP_7x7mm_P0.4mm"
+		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
 			(at 124.46 62.23 0)
 			(hide yes)
 			(show_name no)
