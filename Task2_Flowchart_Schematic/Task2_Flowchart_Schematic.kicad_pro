@@ -30,6 +30,14 @@
   "erc": {
     "erc_exclusions": [
       [
+        "isolated_pin_label|1130300|596900|582aa455-3546-44c9-99e0-154264d1be23|00000000-0000-0000-0000-000000000000|/2cbcc0c5-ba77-4857-961d-ae3e42d2a5ea/2f778b69-c562-465f-87cb-bf6dbef5f5cf||",
+        ""
+      ],
+      [
+        "isolated_pin_label|1130300|622300|c9e722ea-0062-4663-9a65-f7dda459406f|00000000-0000-0000-0000-000000000000|/2cbcc0c5-ba77-4857-961d-ae3e42d2a5ea/2f778b69-c562-465f-87cb-bf6dbef5f5cf||",
+        ""
+      ],
+      [
         "pin_not_connected|406400|673100|274da806-f8e6-4879-b180-8d9765e5cc89|00000000-0000-0000-0000-000000000000|/2cbcc0c5-ba77-4857-961d-ae3e42d2a5ea|/2cbcc0c5-ba77-4857-961d-ae3e42d2a5ea|",
         ""
       ],
@@ -450,7 +458,7 @@
         "uuid": "2cbcc0c5-ba77-4857-961d-ae3e42d2a5ea"
       }
     ],
-    "used_designators": "U1-2,#PWR1-4,AE1,#FLG1-2",
+    "used_designators": "U1-2,#PWR1-6,AE1,R1-2,J1-2,#FLG1-3",
     "variants": []
   },
   "sheets": [
