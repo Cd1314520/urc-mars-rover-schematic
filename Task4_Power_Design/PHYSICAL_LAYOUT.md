@@ -30,7 +30,7 @@ Status: draft, 2026-10-27. The chassis and the electronics box are not designed 
 
 | Part | Qty | Size (mm) | Plate area (mm2) | Mounting | Source |
 |---|---|---|---|---|---|
-| Cytron MDDS30 | 3 | 101.60 x 81.28, height ~42 | 24,774 total | 4 corner holes; optional 40x40x20 mm fan on 30 mm stands | Cytron manual Rev 1.11 p.4 |
+| Cytron MDDS30 | 3 | 101.60 x 81.28, height ~42 | 24,774 total | 4 corner holes; optional 40x40x20 mm fan fits between the top and bottom PCB on 30 mm stands | Cytron manual Rev 1.11 p.4 (size), Rev 1.3 section 9 (fan) |
 | Jetson Orin Nano dev kit | 1 | 100 x 79 x 21 (height incl. feet, module, heatsink) | 7,900 | Carrier board holes | NVIDIA datasheet value (quoted on NVIDIA forum); JetsonHacks measured 103 x 90.5 x 35 with the plastic base |
 | Mean Well DDR-60G-12 | 1 | 52.5 W x 90 H x 54.5 D, 216 g | 4,725 (W x H on the rail) | DIN rail | Mean Well DDR-60 datasheet |
 | Pololu D36V28F5 | 1 | 17.8 x 20.3 x 8.8 | 361 | Two M2 holes | Pololu product page |
@@ -80,7 +80,7 @@ Split the bay into three zones so heavy current, heat and RF stay apart.
 Rules:
 
 1. **Short, fat power path.** Battery -> Class T fuse -> contactor -> fuse block -> MDDS30s all in zone 1, nearest the battery bay. The 24 V high-current runs (main path 8 AWG min / 6 AWG per Trade Study, 12 AWG to each MDDS30, per the drivetrain fuse/wire table) stay as short as possible.
-2. **Drivers on the heat-spreader wall.** Mount the three MDDS30s and the DDR-60G on the aluminium wall from COOLING_PLAN.md option C, with fins vertical so hot air rises. Leave 30 mm + 20 mm above each MDDS30 if the optional fan is fitted **EST**.
+2. **Drivers on the heat-spreader wall.** Mount the three MDDS30s and the DDR-60G on the aluminium wall from COOLING_PLAN.md option C, with fins vertical so hot air rises. If the optional fan is fitted, it mounts on the inner side of the bottom PCB, the two PCBs go back together on the longer 30 mm stands, and the original short stands hold the driver off the plate "to allow some clearance between the platform and the fan intake" (MDDS30 manual Rev 1.3, section 9). So the driver gets taller, and the plate under it must stay open for intake air. Measure the final height once a fan is fitted.
 3. **Keep logic and RF away from the drivers.** MDDS30s switch at 18 kHz with tens of amps; put the Teensy, CAN transceivers, Jetson and radios on the other side of the bay. Cross motor cables and signal cables at 90 degrees where they must cross.
 4. **CAN as one line.** Teensy CAN board and Jetson J17 close together; the bus is a line, not a star, with 120 ohm termination only at the two ends.
 5. **Jetson gets free air.** Its fan heatsink needs open space above it; do not put it under a shelf or next to the drivers.
@@ -138,6 +138,7 @@ The prototype runs open-frame, so the "layout" is a test board, not the rover ba
 - URC 2027 Requirements and Guidelines, rules 2.a.ii, 2.a.iii, 2.a.v, 3.d.iii (repo root PDF)
 - Task 4 spreadsheet (team Drive), TasksStatus, Components and Power Rail Table tabs, read 2026-10-27
 - Cytron MDDS30 User's Manual Rev 1.11, p.4 dimensions: https://forum.dronebotworkshop.com/wp-content/uploads/wpforo/attachments/5360/6077-MDDS30UserManual.pdf
+- Cytron MDDS30 User's Manual Rev 1.3 (October 2026), section 9 "Assemble Optional Fan": Google Doc linked from the Task 4 spreadsheet, TasksStatus, Cooling row
 - NVIDIA forum, Orin Nano dev kit mechanical dimensions (quotes the datasheet): https://forums.developer.nvidia.com/t/mechanical-dimensions-jetson-orin-nano-development-kit/316529
 - JetsonHacks Orin Nano dev kit review (measured with base): https://jetsonhacks.com/2023/03/22/nvidia-jetson-orin-nano-developer-kit-the-perfect-solution-for-makers-and-developers-a-review/
 - Mean Well DDR-60 datasheet: https://www.meanwell.com/Upload/PDF/DDR-60/DDR-60-SPEC.PDF
