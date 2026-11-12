@@ -47,7 +47,9 @@ So the inside air reaches about **45-53 C** at 37.8 C ambient, **before** adding
 | **B. Active, filtered airflow** | Filtered intake fan + exhaust vent (positive pressure keeps dust out) | Inside stays near ambient + ~5 K; simple parts | Filters clog in dust; fans draw power and can fail; vents need rain shielding; filters must be reachable |
 | **C. Hybrid (recommended)** | Sealed box, plus an aluminium heat-spreader wall carrying the MDDS30s and DDR-60G, external fins, and one small internal fan to stir the air across the plate (Jetson keeps its own fan) | Dust-sealed but avoids hot spots; fan failure is not fatal | More mechanical work (plate, thermal pads); still needs the sun shade |
 
-Recommendation: plan for **C**, and confirm with a bench test (see section 6). For the **mid-November drivetrain prototype** there is no enclosure: it runs open-frame on the bench, so the only cooling item is the optional MDDS30 5 V fans.
+**Correction (2026-11-09):** option C as written above does not work for the MDDS30. Its heat sink sits on top with the fins facing up, and the board stands on PCB standoffs, so there is no flat face to bolt to a wall (manual Rev 1.11 p.4-5). The DDR-60G lists no heat-sink mounting face, and the Jetson cools itself with its own fan. So the heat goes into the bay air first. **Revised C:** a sealed box with a through-wall air-to-air exchanger: a fan heat sink inside, another outside with an IP68 fan, both on one aluminium wall section, and the inside fan blowing across the MDDS30 fins. Parts, numbers and sources are in [HEATSINK_HARNESS_RESEARCH.md](HEATSINK_HARNESS_RESEARCH.md).
+
+Recommendation: plan for **revised C**, and confirm with a bench test (see section 6). For the **mid-November drivetrain prototype** there is no enclosure: it runs open-frame on the bench, so the only cooling item is the optional MDDS30 5 V fans.
 
 ## 5. Schematic plan (cooling part)
 

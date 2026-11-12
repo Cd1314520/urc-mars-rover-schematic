@@ -30,7 +30,7 @@ Status: draft, 2026-10-27. The chassis and the electronics box are not designed 
 
 | Part | Qty | Size (mm) | Plate area (mm2) | Mounting | Source |
 |---|---|---|---|---|---|
-| Cytron MDDS30 | 3 | 101.60 x 81.28, height ~42 | 24,774 total | 4 corner holes; optional 40x40x20 mm fan fits between the top and bottom PCB on 30 mm stands | Cytron manual Rev 1.11 p.4 (size), Rev 1.3 section 9 (fan) |
+| Cytron MDDS30 | 3 | Footprint 101.60 x 96.52 (bottom cover; main board is 101.60 x 81.28), height ~42; heat sink fins face **up** | 29,419 total | Corner holes on standoffs; optional 40x40x20 mm fan fits between the top and bottom PCB on 30 mm stands | Cytron manual Rev 1.11 p.4 (main board, height), p.5 (bottom cover), Rev 1.3 section 9 (fan). **Corrected 2026-11-09**: the first version used the 81.28 main-board size |
 | Jetson Orin Nano dev kit | 1 | 100 x 79 x 21 (height incl. feet, module, heatsink) | 7,900 | Carrier board holes | NVIDIA datasheet value (quoted on NVIDIA forum); JetsonHacks measured 103 x 90.5 x 35 with the plastic base |
 | Mean Well DDR-60G-12 | 1 | 52.5 W x 90 H x 54.5 D, 216 g | 4,725 (W x H on the rail) | DIN rail | Mean Well DDR-60 datasheet |
 | Pololu D36V28F5 | 1 | 17.8 x 20.3 x 8.8 | 361 | Two M2 holes | Pololu product page |
@@ -40,7 +40,7 @@ Status: draft, 2026-10-27. The chassis and the electronics box are not designed 
 | Waveshare SN65HVD230 board | 1-3 | TBD | | | Waveshare gives a STEP model only |
 | Class T fuse + holder, contactor, pre-charge, fuse block, PoE injector, USB hub | 1 each | TBD | | | Parts not chosen yet |
 
-**Sum of known modules: about 50,300 mm2 = 0.050 m2.** With 2x to 2.5x for wiring, connectors, terminal access and airflow, plan for **0.10-0.13 m2 of mounting plate**, before the TBD parts and subsystem PCBs. That is roughly a 400 x 250 to 400 x 300 mm plate. The tallest known part is the DDR-60G at 54.5 mm (MDDS30 ~42 mm, more with the fan), so the inside height needs about **100-150 mm EST** once connector and cable bend room are added. This matches the 0.40 x 0.30 x 0.15 m box assumed in COOLING_PLAN.md section 3, but it will get tighter when the subsystem PCBs get sizes.
+**Sum of known modules: about 55,000 mm2 = 0.055 m2.** With 2x to 2.5x for wiring, connectors, terminal access and airflow, plan for **0.11-0.14 m2 of mounting plate**, before the TBD parts and subsystem PCBs. That is roughly a 400 x 275 to 400 x 350 mm plate. In the to-scale top view, the three MDDS30s in a row take 296 of the 300 mm depth, so a 300 mm deep plate has no spare room in zone 1. The tallest known part is the DDR-60G at 54.5 mm (MDDS30 ~42 mm, more with the fan), so the inside height needs about **100-150 mm EST** once connector and cable bend room are added. This matches the 0.40 x 0.30 x 0.15 m box assumed in COOLING_PLAN.md section 3, but it will get tighter when the subsystem PCBs get sizes.
 
 ### Outside the bay
 
@@ -62,7 +62,7 @@ Split the bay into three zones so heavy current, heat and RF stay apart.
             FRONT (access panel side)
  +------------------------------------------------------+
  |  ZONE 1: POWER / DRIVE      |  ZONE 2: LOGIC          |
- |  (heat-spreader wall)       |                         |
+ |  (next to the exchanger)    |                         |
  |  main fuse -> contactor ->  |  DDR-60G-12 (DIN)       |
  |  fuse block                 |  D36V28F5               |
  |  MDDS30 #1 #2 #3 in a row,  |  Teensy + CAN board     |
@@ -80,13 +80,20 @@ Split the bay into three zones so heavy current, heat and RF stay apart.
 Rules:
 
 1. **Short, fat power path.** Battery -> Class T fuse -> contactor -> fuse block -> MDDS30s all in zone 1, nearest the battery bay. The 24 V high-current runs (main path 8 AWG min / 6 AWG per Trade Study, 12 AWG to each MDDS30, per the drivetrain fuse/wire table) stay as short as possible.
-2. **Drivers on the heat-spreader wall.** Mount the three MDDS30s and the DDR-60G on the aluminium wall from COOLING_PLAN.md option C, with fins vertical so hot air rises. If the optional fan is fitted, it mounts on the inner side of the bottom PCB, the two PCBs go back together on the longer 30 mm stands, and the original short stands hold the driver off the plate "to allow some clearance between the platform and the fan intake" (MDDS30 manual Rev 1.3, section 9). So the driver gets taller, and the plate under it must stay open for intake air. Measure the final height once a fan is fitted.
+2. **Drivers in the exchanger's air path.** (Corrected 2026-11-09.) The MDDS30 cannot bolt to a heat-spreader wall: its heat sink sits on top with the fins facing up, and the board stands on PCB standoffs (manual Rev 1.11 p.4). So place the three MDDS30s where the internal fan of the through-wall exchanger (COOLING_PLAN.md option C, revised) blows across their fins. If the optional fan is fitted, it mounts on the inner side of the bottom PCB, the two PCBs go back together on the longer 30 mm stands, and the original short stands hold the driver off the plate "to allow some clearance between the platform and the fan intake" (MDDS30 manual Rev 1.3, section 9). So the driver gets taller, and the plate under it must stay open for intake air. Measure the final height once a fan is fitted.
 3. **Keep logic and RF away from the drivers.** MDDS30s switch at 18 kHz with tens of amps; put the Teensy, CAN transceivers, Jetson and radios on the other side of the bay. Cross motor cables and signal cables at 90 degrees where they must cross.
 4. **CAN as one line.** Teensy CAN board and Jetson J17 close together; the bus is a line, not a star, with 120 ohm termination only at the two ends.
 5. **Jetson gets free air.** Its fan heatsink needs open space above it; do not put it under a shelf or next to the drivers.
 6. **RF at the edge.** RFD900x near its antenna feed-through, so the coax is short. Ethernet to the Groove on the mast leaves through a bulkhead.
 7. **Vibration.** Every board on standoffs; locking connectors (not bare 0.1 inch headers) on anything that leaves a board; strain relief at each gland.
 8. **Each subsystem board removable on its own.** Every board connects through connectors, not soldered wires, so one board can be pulled for repair without unwiring the others. This is the "access" part of the task.
+
+### Figures (2026-11-09)
+
+- [layout_figures/bay_top_view.png](layout_figures/bay_top_view.png): top view of the bay, **to scale**, on a 400 x 300 mm plate. White boxes are verified datasheet sizes; yellow dashed boxes are placeholders until the part or board size is known.
+- [layout_figures/rover_side_view.png](layout_figures/rover_side_view.png): where the bay, battery, mast, E-stop, LiDAR, arm and science module sit on the rover. **Illustrative only**: the chassis is not designed yet.
+
+Both are drawn by `layout_figures/make_figures.py` (`python make_figures.py .`), so they can be redrawn when the mechanical team gives the real box size.
 
 ## 4. Access from the outside
 
