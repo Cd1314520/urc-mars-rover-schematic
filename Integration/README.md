@@ -63,7 +63,7 @@ Every sheet already exists. Comms_Navi is the real sheet; the others are **place
 6. **Fill in the title block:** title, date, rev and your name.
 7. **Run ERC** (Inspect → Electrical Rules Checker) before you push. Fix the errors, or write a note saying why one is OK.
 8. **Custom symbols go into `libraries/URC2027.kicad_sym`**, not into a library on your own C: drive. If the library path starts with `C:/Users/...`, it only works on your computer.
-9. **Reference numbers:** when everything is merged, Chris will run Annotate with "first free number after sheet number x 100". This makes PDP parts 1xx, Compute 2xx and so on, so two `F1`s cannot clash. You do not need to do anything for this.
+9. **Reference numbers:** when everything is merged, Chris will run Annotate with "first free number after sheet number x 100". The sheet number is the page number in the root sheet, so PDP parts become 2xx, Compute/Logic 3xx, Drivetrain 4xx, Comms/Navi 5xx, Robo Arm 6xx, Sci Package 7xx and Wheel Encoders 8xx. Two `F1`s then cannot clash. You do not need to do anything for this. (Compute/Logic already uses 3xx.)
 
 ---
 
