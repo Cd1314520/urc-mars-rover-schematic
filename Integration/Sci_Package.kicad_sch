@@ -1,0 +1,26 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "e6444865-9165-4093-b305-bb0417d77473")
+	(paper "A4")
+	(title_block
+		(title "Sci_Package (placeholder)")
+		(date "2026-11-16")
+		(company "UH URC Power")
+		(comment 1 "Kaden: upload your sheet with this exact file name to replace this placeholder")
+	)
+	(lib_symbols)
+	(text "PLACEHOLDER - Kaden replaces this file with the real Sci_Package sheet (README.md section 5)"
+		(exclude_from_sim no)
+		(at 25.4 30.48 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+			)
+			(justify left)
+		)
+		(uuid "3bfc323c-896c-414c-8eda-130d24dccdfe")
+	)
+	(embedded_fonts no)
+)

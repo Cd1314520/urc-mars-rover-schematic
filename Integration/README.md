@@ -49,6 +49,8 @@ Integration/
 
 **Use these exact file names.** The root sheet looks for your sheet by its file name. If you rename it, your box on the root sheet goes blank.
 
+Every sheet already exists. Comms_Navi is the real sheet; the others are **placeholders** that say "PLACEHOLDER" on the page. Upload your sheet with the same file name and it replaces the placeholder.
+
 ---
 
 ## 3. Rules for your sheet

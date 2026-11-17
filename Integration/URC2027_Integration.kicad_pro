@@ -1,0 +1,549 @@
+{
+  "board": {
+    "3dviewports": [],
+    "ipc2581": {
+      "bom_rev": "",
+      "dist": "",
+      "distpn": "",
+      "internal_id": "",
+      "mfg": "",
+      "mpn": "",
+      "sch_revision": "A"
+    },
+    "layer_pairs": [],
+    "layer_presets": [],
+    "viewports": []
+  },
+  "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
+  "cvpcb": {
+    "equivalence_files": []
+  },
+  "erc": {
+    "erc_exclusions": [
+      [
+        "pin_not_connected|1143000|482600|14b3c4c8-fb38-58bc-9727-d0594142d5c7|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2|/d6b31cca-3026-5b3e-8cef-4b63523700f2|",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "pin_not_connected|1143000|584200|0fa4c912-7db7-560d-b4d9-54294c5c873a|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2|/d6b31cca-3026-5b3e-8cef-4b63523700f2|",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "pin_not_connected|1143000|685800|afcff55b-d388-5f0a-a4a2-58855a53d312|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2|/d6b31cca-3026-5b3e-8cef-4b63523700f2|",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "pin_not_connected|1143000|787400|1f71a97f-e217-5b2d-9698-50ad960b4761|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2|/d6b31cca-3026-5b3e-8cef-4b63523700f2|",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "pin_not_connected|1143000|889000|c37e807a-b3e1-50c7-a73b-e5ec96bb2279|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2|/d6b31cca-3026-5b3e-8cef-4b63523700f2|",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "pin_not_connected|1143000|990600|a8fce352-769a-5791-b80c-8785c37b55df|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2|/d6b31cca-3026-5b3e-8cef-4b63523700f2|",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "pin_not_connected|1143000|1092200|bc4cea00-28e3-5a65-a010-b99434afc7ae|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2|/d6b31cca-3026-5b3e-8cef-4b63523700f2|",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "pin_not_connected|1143000|1193800|ef1f8a2d-b11a-50c9-808f-c9c6c59fc330|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2|/d6b31cca-3026-5b3e-8cef-4b63523700f2|",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "pin_not_connected|1143000|1295400|8c5d921f-3d36-5691-8e7a-546ddb30ae17|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2|/d6b31cca-3026-5b3e-8cef-4b63523700f2|",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "pin_not_connected|1143000|1397000|5f9e496b-8ac4-544a-b352-3c277a17d6ed|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2|/d6b31cca-3026-5b3e-8cef-4b63523700f2|",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "isolated_pin_label|2057400|1917700|01d5928a-667e-51bb-b7de-45f08a76eedb|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2/d6a5d2f9-08af-5620-b4c5-5a5022513442||",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "isolated_pin_label|368300|1841500|09570860-03d4-59f4-a0e4-05801dcbede4|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2/d6a5d2f9-08af-5620-b4c5-5a5022513442||",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "isolated_pin_label|368300|1816100|10904427-12e2-5d52-8d22-64e54dea1ec7|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2/d6a5d2f9-08af-5620-b4c5-5a5022513442||",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "isolated_pin_label|368300|2413000|53ee514e-249d-5145-b1cf-464d6d417857|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2/d6a5d2f9-08af-5620-b4c5-5a5022513442||",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "isolated_pin_label|368300|2438400|5a1c307f-a0a8-5f08-a0bb-822c60100b45|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2/d6a5d2f9-08af-5620-b4c5-5a5022513442||",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "isolated_pin_label|3276600|1917700|6760174d-b55e-5845-8baa-3668234f71c4|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2/d6a5d2f9-08af-5620-b4c5-5a5022513442||",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "isolated_pin_label|3581400|863600|9d7684ae-3465-5e13-86a3-45b1954e41a6|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2/d6a5d2f9-08af-5620-b4c5-5a5022513442||",
+        "Waiting for Compute/Logic sheet"
+      ],
+      [
+        "isolated_pin_label|2667000|1917700|e8c9375c-8436-59ad-b5bc-153b18476f5a|00000000-0000-0000-0000-000000000000|/d6b31cca-3026-5b3e-8cef-4b63523700f2/d6a5d2f9-08af-5620-b4c5-5a5022513442||",
+        "Waiting for Compute/Logic sheet"
+      ]
+    ],
+    "meta": {
+      "version": 0
+    },
+    "pin_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    "rule_severities": {
+      "bus_definition_conflict": "error",
+      "bus_entry_needed": "error",
+      "bus_to_bus_conflict": "error",
+      "bus_to_net_conflict": "error",
+      "different_unit_footprint": "error",
+      "different_unit_net": "error",
+      "duplicate_reference": "error",
+      "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
+      "extra_units": "error",
+      "field_name_whitespace": "warning",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
+      "ground_pin_not_ground": "warning",
+      "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
+      "label_dangling": "error",
+      "label_multiple_wires": "warning",
+      "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
+      "multiple_net_names": "warning",
+      "net_not_bus_member": "warning",
+      "no_connect_connected": "warning",
+      "no_connect_dangling": "warning",
+      "pin_not_connected": "error",
+      "pin_not_driven": "error",
+      "pin_to_pin": "warning",
+      "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
+      "similar_labels": "warning",
+      "similar_power": "warning",
+      "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
+      "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
+      "unit_value_mismatch": "error",
+      "unresolved_variable": "error",
+      "wire_dangling": "error"
+    }
+  },
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "URC2027_Integration.kicad_pro",
+    "version": 3
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      }
+    ],
+    "meta": {
+      "version": 5
+    },
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": []
+  },
+  "pcbnew": {
+    "last_paths": {
+      "idf": "",
+      "netlist": "",
+      "plot": "",
+      "specctra_dsn": "",
+      "step": "",
+      "vrml": ""
+    },
+    "page_layout_descr_file": ""
+  },
+  "schematic": {
+    "annotate_start_num": 0,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
+    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_fmt_presets": [],
+    "bom_fmt_settings": {
+      "field_delimiter": ",",
+      "keep_line_breaks": false,
+      "keep_tabs": false,
+      "name": "CSV",
+      "ref_delimiter": ",",
+      "ref_range_delimiter": "",
+      "string_delimiter": "\""
+    },
+    "bom_presets": [],
+    "bom_settings": {
+      "exclude_dnp": false,
+      "fields_ordered": [
+        {
+          "group_by": false,
+          "label": "Reference",
+          "name": "Reference",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Simulation",
+          "name": "${EXCLUDE_FROM_SIM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Position Files",
+          "name": "${EXCLUDE_FROM_POS_FILES}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
+        }
+      ],
+      "filter_string": "",
+      "group_symbols": true,
+      "include_excluded_from_bom": true,
+      "name": "Default Editing",
+      "sort_asc": true,
+      "sort_field": "\u4f4d\u53f7"
+    },
+    "bus_aliases": {},
+    "connection_grid_size": 50.0,
+    "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
+      "default_line_thickness": 6.0,
+      "default_text_size": 50.0,
+      "field_names": [],
+      "hop_over_size_choice": 0,
+      "intersheets_ref_own_page": false,
+      "intersheets_ref_prefix": "",
+      "intersheets_ref_short": false,
+      "intersheets_ref_show": false,
+      "intersheets_ref_suffix": "",
+      "junction_size_choice": 3,
+      "label_size_ratio": 0.375,
+      "operating_point_overlay_i_precision": 3,
+      "operating_point_overlay_i_range": "~A",
+      "operating_point_overlay_v_precision": 3,
+      "operating_point_overlay_v_range": "~V",
+      "overbar_offset_ratio": 1.23,
+      "pin_symbol_size": 25.0,
+      "text_offset_ratio": 0.15
+    },
+    "legacy_lib_dir": "",
+    "legacy_lib_list": [],
+    "meta": {
+      "version": 1
+    },
+    "page_layout_descr_file": "",
+    "plot_directory": "",
+    "reuse_designators": true,
+    "subpart_first_id": 65,
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "Comms_Navi_2027.kicad_sch",
+        "name": "Comms_Navi_2027",
+        "uuid": "d6b31cca-3026-5b3e-8cef-4b63523700f2"
+      }
+    ],
+    "used_designators": "U1-2,#PWR1-6,AE1,R1-2,J1-2,#FLG1-3",
+    "variants": []
+  },
+  "sheets": [
+    [
+      "d6b31cca-3026-5b3e-8cef-4b63523700f2",
+      "Root"
+    ],
+    [
+      "2b5d9a12-3481-45f4-be66-66b593f9798c",
+      "PDP"
+    ],
+    [
+      "8f2afdb4-590b-4116-b760-b829ea1fa95c",
+      "Compute_Logic"
+    ],
+    [
+      "a69c8c2e-d08f-48df-8697-7640cf07f21e",
+      "Drivetrain"
+    ],
+    [
+      "d6a5d2f9-08af-5620-b4c5-5a5022513442",
+      "Comms_Navi"
+    ],
+    [
+      "cc9a39dd-0947-4b1f-b824-69339b0cbbe3",
+      "Robo_Arm"
+    ],
+    [
+      "27dd87ec-f451-4feb-b004-36a79db61729",
+      "Sci_Package"
+    ],
+    [
+      "29ad8e79-dcc3-440b-a60a-e861068c770e",
+      "Wheel_Encoders"
+    ]
+  ],
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
+}

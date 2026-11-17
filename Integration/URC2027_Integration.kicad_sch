@@ -1,0 +1,436 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "d6b31cca-3026-5b3e-8cef-4b63523700f2")
+	(paper "A3")
+	(title_block
+		(title "URC 2027 Integration - Root")
+		(date "2026-11-16")
+		(rev "A")
+		(company "UH URC Power")
+		(comment 1 "One box per subsystem sheet. Each owner replaces only their own file (see README.md)")
+		(comment 2 "Signals between sheets connect by global label name; rails use the agreed net names")
+	)
+	(lib_symbols)
+	(text "URC 2027 rover electronics: one sheet per subsystem. Open a box with a double-click."
+		(exclude_from_sim no)
+		(at 25.4 30.48 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+			)
+			(justify left)
+		)
+		(uuid "ce4fae66-fecb-4afe-a103-93acfbc16768")
+	)
+	(text "Signals that cross sheets use global labels with the same name. Net names: README section 4."
+		(exclude_from_sim no)
+		(at 25.4 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "75aa5c31-b31c-4f0f-8460-812782faf1da")
+	)
+	(sheet
+		(at 25.4 50.8)
+		(size 76.2 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2b5d9a12-3481-45f4-be66-66b593f9798c")
+		(property "Sheetname" "PDP"
+			(at 25.4 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "PDP.kicad_sch"
+			(at 25.4 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "URC2027_Integration"
+				(path "/d6b31cca-3026-5b3e-8cef-4b63523700f2"
+					(page "2")
+				)
+			)
+		)
+	)
+	(text "Owner: Bryan"
+		(exclude_from_sim no)
+		(at 27.94 69.85 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+			)
+			(justify left)
+		)
+		(uuid "47f720a0-d046-48ba-92ef-7f3c23e55813")
+	)
+	(sheet
+		(at 120.65 50.8)
+		(size 76.2 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8f2afdb4-590b-4116-b760-b829ea1fa95c")
+		(property "Sheetname" "Compute_Logic"
+			(at 120.65 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "Compute_Logic.kicad_sch"
+			(at 120.65 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "URC2027_Integration"
+				(path "/d6b31cca-3026-5b3e-8cef-4b63523700f2"
+					(page "3")
+				)
+			)
+		)
+	)
+	(text "Owner: Paul"
+		(exclude_from_sim no)
+		(at 123.19 69.85 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+			)
+			(justify left)
+		)
+		(uuid "3cd2b15a-1982-4e34-9ddb-2c90f49fb60f")
+	)
+	(sheet
+		(at 215.9 50.8)
+		(size 76.2 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a69c8c2e-d08f-48df-8697-7640cf07f21e")
+		(property "Sheetname" "Drivetrain"
+			(at 215.9 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "Drivetrain.kicad_sch"
+			(at 215.9 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "URC2027_Integration"
+				(path "/d6b31cca-3026-5b3e-8cef-4b63523700f2"
+					(page "4")
+				)
+			)
+		)
+	)
+	(text "Owner: Krishna"
+		(exclude_from_sim no)
+		(at 218.44 69.85 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+			)
+			(justify left)
+		)
+		(uuid "5b84d26c-0ace-4be5-9f5e-e830c8e0a5e7")
+	)
+	(sheet
+		(at 311.15 50.8)
+		(size 76.2 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d6a5d2f9-08af-5620-b4c5-5a5022513442")
+		(property "Sheetname" "Comms_Navi"
+			(at 311.15 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "Comms_Navi.kicad_sch"
+			(at 311.15 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "URC2027_Integration"
+				(path "/d6b31cca-3026-5b3e-8cef-4b63523700f2"
+					(page "5")
+				)
+			)
+		)
+	)
+	(text "Owner: Chris"
+		(exclude_from_sim no)
+		(at 313.69 69.85 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+			)
+			(justify left)
+		)
+		(uuid "6de6d825-c52e-4c85-b6dc-b2041d1d2f66")
+	)
+	(sheet
+		(at 25.4 114.3)
+		(size 76.2 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "cc9a39dd-0947-4b1f-b824-69339b0cbbe3")
+		(property "Sheetname" "Robo_Arm"
+			(at 25.4 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "Robo_Arm.kicad_sch"
+			(at 25.4 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "URC2027_Integration"
+				(path "/d6b31cca-3026-5b3e-8cef-4b63523700f2"
+					(page "6")
+				)
+			)
+		)
+	)
+	(text "Owner: Ricky"
+		(exclude_from_sim no)
+		(at 27.94 133.35 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+			)
+			(justify left)
+		)
+		(uuid "32c220ca-e51c-4a2f-83f3-5b4f0b5a92c3")
+	)
+	(sheet
+		(at 120.65 114.3)
+		(size 76.2 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "27dd87ec-f451-4feb-b004-36a79db61729")
+		(property "Sheetname" "Sci_Package"
+			(at 120.65 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "Sci_Package.kicad_sch"
+			(at 120.65 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "URC2027_Integration"
+				(path "/d6b31cca-3026-5b3e-8cef-4b63523700f2"
+					(page "7")
+				)
+			)
+		)
+	)
+	(text "Owner: Kaden"
+		(exclude_from_sim no)
+		(at 123.19 133.35 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+			)
+			(justify left)
+		)
+		(uuid "79c9b53a-0435-4016-a3ae-3fc31a768433")
+	)
+	(sheet
+		(at 215.9 114.3)
+		(size 76.2 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "29ad8e79-dcc3-440b-a60a-e861068c770e")
+		(property "Sheetname" "Wheel_Encoders"
+			(at 215.9 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "Wheel_Encoders.kicad_sch"
+			(at 215.9 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "URC2027_Integration"
+				(path "/d6b31cca-3026-5b3e-8cef-4b63523700f2"
+					(page "8")
+				)
+			)
+		)
+	)
+	(text "Owner: owner TBD"
+		(exclude_from_sim no)
+		(at 218.44 133.35 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+			)
+			(justify left)
+		)
+		(uuid "4b4a2814-04f0-4cc6-a626-46b17e4c8bf2")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

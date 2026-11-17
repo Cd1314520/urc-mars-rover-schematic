@@ -1,0 +1,26 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "70da3c68-f082-45b1-ab43-7e1af57ff6f0")
+	(paper "A4")
+	(title_block
+		(title "Drivetrain (placeholder)")
+		(date "2026-11-16")
+		(company "UH URC Power")
+		(comment 1 "Krishna: upload your sheet with this exact file name to replace this placeholder")
+	)
+	(lib_symbols)
+	(text "PLACEHOLDER - Krishna replaces this file with the real Drivetrain sheet (README.md section 5)"
+		(exclude_from_sim no)
+		(at 25.4 30.48 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+			)
+			(justify left)
+		)
+		(uuid "ff5f1fe2-bc11-46ff-9541-2f957cb76ae9")
+	)
+	(embedded_fonts no)
+)
