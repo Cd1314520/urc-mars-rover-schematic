@@ -6,7 +6,7 @@ Inputs:
 - Chris's Comms/Navi KiCad sheet (10/23): J1-J8, F1, U1/U2, Q1-Q3.
 - Task 4 spreadsheet, "Comms Navi" tab, load detail (Chris, 10/19): nominal and peak current per load.
 - Bryan's PDP sheet (team repo, merged 11/14).
-- [COMMS_NAVI_SCHEMATIC_PLAN.md](COMMS_NAVI_SCHEMATIC_PLAN.md), [HEATSINK_HARNESS_RESEARCH.md](HEATSINK_HARNESS_RESEARCH.md), [PHYSICAL_LAYOUT.md](PHYSICAL_LAYOUT.md).
+- [COMMS_NAVI_SCHEMATIC_PLAN.md](../Task4_2027_Architecture/COMMS_NAVI_SCHEMATIC_PLAN.md), [HEATSINK_HARNESS_RESEARCH.md](../Task4_2027_Architecture/HEATSINK_HARNESS_RESEARCH.md), [PHYSICAL_LAYOUT.md](../Task4_2027_Architecture/PHYSICAL_LAYOUT.md).
 
 **EST** = our own estimate or arithmetic. **TBD** = needs a part choice, a measurement, or a source we could not open.
 

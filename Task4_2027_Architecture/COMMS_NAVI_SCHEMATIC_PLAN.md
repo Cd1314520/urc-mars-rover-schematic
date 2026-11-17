@@ -8,7 +8,7 @@ I have not read "Task 4, pg 2", so check its PCB definition against section 2.
 
 ## 1. Why a new schematic
 
-The current KiCad sheet, `Task2_Flowchart_Schematic/lidar_navigation.kicad_sch`, belongs to the **original (Task 2) architecture**. It does not match the 2027 component list:
+The current KiCad sheet, `Task2_Old_Architecture_Flowchart_Schematic/lidar_navigation.kicad_sch`, belongs to the **original (Task 2) architecture**. It does not match the 2027 component list:
 
 | Item | Current sheet (Task 2) | 2027 list (Task 4, 10/19) |
 |---|---|---|
@@ -100,7 +100,7 @@ The Power Rail Table rows Chris added on 10/19 say 12 V peak 0.99 A (3.99 A with
 
 ## 4. KiCad project layout
 
-New project: `Task4_Power_Design/Comms_Navi/Comms_Navi.kicad_pro`.
+Drawn as `Integration/Comms_Navi.kicad_sch` inside the shared project `Integration/URC2027_Integration.kicad_pro` (this plan first proposed a separate `Comms_Navi.kicad_pro`).
 
 | Sheet | File | Contents |
 |---|---|---|

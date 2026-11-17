@@ -69,9 +69,9 @@ Interpretation decisions for the lidar + navigation block (Chris's own decisions
 | Task 2 report archive | Completed | Original PDF copied into the project root and identical file hashes checked |
 | Task 2 report review | Completed | All 12 pages reviewed, including power tables, architecture, battery sizing, and protection proposals |
 | Load-list and rail calculations | Walked through in conversation | Tables, formulas, and example results are recorded below; the user's working spreadsheet has not been inspected |
-| KiCad master project | Created | `Task2_Flowchart_Schematic/` with root sheet and project-specific symbol library `rover_modules` |
+| KiCad master project | Created | `Task2_Old_Architecture_Flowchart_Schematic/` with root sheet and project-specific symbol library `rover_modules` |
 | **Lidar + navigation schematic** | Completed, ERC 0 errors | `lidar_navigation.kicad_sch`. Remaining violations are excluded because the Jetson sheet does not exist yet |
-| Git repository | Published (private) | `github.com/Cd1314520/urc-mars-rover-schematic`. Repo root is the project folder: docs at root, `Task1_Battery/`, `Task2_Flowchart_Schematic/`. Excel files are git-ignored. Collaborator invites not verified |
+| Git repository | Published (public since 2026-11-16) | `github.com/Cd1314520/urc-mars-rover-schematic`. Repo root is the project folder: docs at root, one folder per Drive task (see README.md). Excel files are git-ignored. Collaborator invites not verified |
 | Canva edits | None performed by the assistant | Flowchart work belongs to the team's assigned contributors |
 
 The user progressed through the calculation tutorial by requesting each next step. This records tutorial progress; it is not proof that each step has been saved in a separate workbook or checked in Excel.
@@ -219,7 +219,7 @@ The 350W and 500W rows and the 60W standby are planning placeholders, not measur
 ### 8.3 Working proposal (for team review)
 
 - **Primary pack:** one 6S LiPo in the 22–30Ah class. The report's 10–12Ah does not cover 60 minutes at its own high estimate.
-  - **Tattu 30Ah** is the first to validate. It covers setup + the 60-min Delivery up to about 518 W, and the 70-min Autonomy + Equipment block without a swap up to about 435 W (with 60 W standby for setup and the gap). See `Task1_Battery/URC_2027_Battery_Swap_Report.xlsx` (local only, not in Git).
+  - **Tattu 30Ah** is the first to validate. It covers setup + the 60-min Delivery up to about 518 W, and the 70-min Autonomy + Equipment block without a swap up to about 435 W (with 60 W standby for setup and the gap). See `Task2_Old_Architecture_Power_Supply/URC_2027_Battery_Swap_Report.xlsx` (local only, not in Git).
   - It keeps the report's 6S voltage (25.2V max), so drivers and bucks are unchanged.
 - **Second identical pack** for swaps between missions or days. Use a quick-disconnect connector and an accessible pack bay, and rehearse the swap to fit inside 10 minutes.
   - Confirm with URC whether a second pack used in rotation counts toward the $26,000 cap. The exclusion in 3.c.v covers only one-for-one damage replacements.
@@ -248,7 +248,7 @@ Subsystem assignments from the team recap:
 - **Krishna:** drivetrain subsystem schematic.
 - **Chris:** lidar + navigation subsystem schematic.
 
-KiCad status (KiCad 10.0.6), project `Task2_Flowchart_Schematic/`:
+KiCad status (KiCad 10.0.6), project `Task2_Old_Architecture_Flowchart_Schematic/`:
 
 - **Root sheet** holds one hierarchical sheet per subsystem.
 - **`lidar_navigation.kicad_sch`** is complete:
@@ -275,12 +275,12 @@ The bulk capacitor and TVS blocks need real circuit connections; the flowchart a
 
 ### Verified local files
 
-- [Task 2 report](Task1_Battery/URC%20Task%202%20Report.pdf)
+- [Task 2 report](Task2_Old_Architecture_Power_Supply/URC%20Task%202%20Report.pdf)
 - [URC 2027 Requirements and Guidelines](URC%202027%20Requirements%20and%20Guidelines.pdf) (official PDF, downloaded September 29, 2026)
 - [URC 2027 rules review](URC_2027_Rules_Review.md)
-- `Task1_Battery/URC_Rover_Battery_Comparison.xlsx`: initial battery comparison workbook (local only, not in Git; dated September 15, 2026. A SharePoint copy exists; any online edits were not inspected)
-- `Task1_Battery/URC_2027_Battery_Swap_Report.xlsx`: URC 2027 battery swap report with pros/cons, tier list, swap calculator and team survey (local only, not in Git)
-- [KiCad project](Task2_Flowchart_Schematic/Task2_Flowchart_Schematic.kicad_pro)
+- `Task2_Old_Architecture_Power_Supply/URC_Rover_Battery_Comparison.xlsx`: initial battery comparison workbook (local only, not in Git; dated September 15, 2026. A SharePoint copy exists; any online edits were not inspected)
+- `Task2_Old_Architecture_Power_Supply/URC_2027_Battery_Swap_Report.xlsx`: URC 2027 battery swap report with pros/cons, tier list, swap calculator and team survey (local only, not in Git)
+- [KiCad project](Task2_Old_Architecture_Flowchart_Schematic/Task2_Flowchart_Schematic.kicad_pro)
 
 The separate `Task_2_Power_Load_List.xlsx` discussed in the tutorial was a suggested user-created file. It was not found in this workspace.
 

@@ -1,6 +1,6 @@
 # Drivetrain Rapid Prototype: Schematic Plan
 
-Working plan for turning Tyler's drawing ("If we have 2x 12 V battery in series and Jetson Hookup") into a KiCad schematic. Status: draft, 2026-10-23. Deadline for the prototype: mid-November 2026.
+Working plan for turning Tyler's drawing ("If we have 2x 12 V battery in series and Jetson Hookup") into a KiCad schematic. Status: draft, 2026-10-23. Deadline for the prototype: mid-November 2026. **Not continued:** Chris stopped prototype work on 2026-10-27 (Drive folder `_2.2.3.2.00_Drivetrain_Demo`).
 
 Values marked **EST** are estimates and must be replaced once the motor datasheet is in hand. Items marked **TBD** are waiting on a part decision or a measurement.
 
@@ -54,7 +54,7 @@ Rules: fuse continuous load <= 80% of the fuse rating; fuse rating <= 80% of wir
 
 ## 4. KiCad project layout
 
-New project: `Task5_Drivetrain_Prototype/Drivetrain_Prototype.kicad_pro`, with a project symbol library for the Teensy symbol.
+New project: `Drivetrain_Demo/Drivetrain_Prototype.kicad_pro`, with a project symbol library for the Teensy symbol.
 
 | Sheet | File | Contents |
 |---|---|---|

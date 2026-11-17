@@ -24,6 +24,8 @@ The root project is probably the base for Toka's "shared KiCad". It has one shee
 
 ### Chris's local drawing: `E:\UH_Robotic_Mars_Rover\Task4_Power_Design\Comms_Navi_2027\` (10/23, not in git)
 
+**Update 2026-11-16:** this local copy is now a backup only. The master copy is `Integration/Comms_Navi.kicad_sch` (global labels instead of hierarchical labels). Edit only the repo copy.
+
 Root `Comms_Navi_2027.kicad_sch` plus one sub-sheet `comms_navi.kicad_sch` and its own symbol library `comms_navi.kicad_sym` (LSM6DSV).
 
 | Block | Parts drawn | Connections (from the netlist) |
@@ -37,7 +39,7 @@ Root `Comms_Navi_2027.kicad_sch` plus one sub-sheet `comms_navi.kicad_sch` and i
 
 ERC: 18 violations, all 18 excluded with the note "Waiting for Compute/Logic sheet" (10 sheet pins not connected, 8 labels with only one pin). Nothing else.
 
-### Chris's personal repo (`Task2_Flowchart_Schematic`)
+### Chris's personal repo (`Task2_Old_Architecture_Flowchart_Schematic`)
 
 Old Task 2 architecture (RPLIDAR S2 + SparkFun RTK GPS, Ricky's old arm servo sheet). Keep it as a record. It is not the 2027 design.
 
