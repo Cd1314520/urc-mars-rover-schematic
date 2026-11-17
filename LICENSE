@@ -1,0 +1,18 @@
+Copyright (c) 2026 University of Houston Robotics Club, URC Power Subteam.
+All rights reserved.
+
+This repository (schematics, KiCad files, documents, figures and code) is
+published so that team members and reviewers can read it. No license is
+granted. Without prior written permission from the copyright holder, you may
+not copy, modify, distribute, publish, sublicense, sell, or use any part of
+this repository, including in your own rover, competition entry or product.
+
+Because the repository is public on GitHub, GitHub's Terms of Service allow
+other GitHub users to view it and to fork it on GitHub. That does not grant
+any other right to use, copy or modify the contents.
+
+Third-party material keeps its own terms. In particular, "URC 2027
+Requirements and Guidelines.pdf" belongs to The Mars Society, and the
+datasheet values quoted in the documents belong to their manufacturers.
+
+To ask for permission, open an issue in this repository.
